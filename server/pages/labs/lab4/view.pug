@@ -1,0 +1,28 @@
+extends ../../../views/layout
+block content
+  h2.lab-title Лабораторная работа №#{activeLab}
+  p Выберите значения полей, чтобы сгенерировать цикл:
+  div.loops
+    div#data(style='display:none') #{options}
+    p Номер цикла:
+    select#loop-number
+      - for (var i = 0; i < size; i++)
+        option(value=i + 1) #{i + 1}
+    p Начало цикла:
+    select#start-input
+      each val in initial.start
+        option(value=val) #{val}
+    p Конец цикла:
+    select#end-input
+      each val in initial.end
+        option(value=val) #{val}
+    p Шаг цикла:
+    select#step-input
+      each val in initial.step
+        option(value=val) #{val}
+
+    button(type='button', id='generate-loop')
+      | Сгенерировать
+
+block application
+  script(src='/bin/lab4.js', charset='utf-8')

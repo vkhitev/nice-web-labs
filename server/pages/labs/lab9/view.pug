@@ -1,0 +1,79 @@
+extends ../../../views/layout
+block content
+  h2.lab-title Лабораторная работа №#{activeLab}
+  | Отчёт по времени миграции:
+  pre
+    table(style='width:100%;')
+      thead
+        td(style='height:25px; font-weight:bold;') Событие
+        td(style='font-weight:bold;') Время выполнения
+      tbody
+        each val in benchmark.migrating
+          tr
+            td(style='width: 70%;') #{val.event}
+            td #{val.time}с
+
+  br
+  | Отчёт по времени заполнения базы:
+  pre
+    table(style='width:100%;')
+      thead
+        td(style='height:25px; font-weight:bold;') Событие
+        td(style='font-weight:bold;') Время выполнения
+      tbody
+        each val in benchmark.seeding
+          tr
+            td(style='width: 70%;') #{val.event}
+            td #{val.time}с
+
+  br
+  | Количество учеников с отклонениями от среднего балла:
+  pre
+    table(style='width:100%;')
+      thead
+        td(style='height:25px; font-weight:bold;') Класс
+        td(style='font-weight:bold;') Отклонение (2.5), чел.
+        td(style='font-weight:bold;') Отклонение (5), чел.
+        td(style='font-weight:bold;') Отклонение ЗНО (25), чел.
+        td(style='font-weight:bold;') Отклонение ЗНО (50), чел.
+      tbody
+        each val in deviation
+          tr
+            td #{val.form}
+            td #{val.small_mark_dev}
+            td #{val.big_mark_dev}
+            td #{val.small_test_dev}
+            td #{val.big_test_dev}
+
+  br
+  | Корреляция между средним баллом аттестата и средним баллом ЗНО для учеников 12 класса:
+  pre
+    table(style='width:100%;')
+      thead
+        td(style='height:25px; font-weight:bold;') Тип корреляции
+        td(style='font-weight:bold;') Значение
+      tbody
+        tr
+          td(style='width: 70%;') Все ученики
+          td #{correlation.cor1}
+        tr
+          td Ученики с откл. балла аттестата (2.5)
+          td #{correlation.cor2}
+        tr
+          td Ученики с откл. балла ЗНО (25)
+          td #{correlation.cor3}
+        tr
+          td Ученики с откл. балла аттестата (2.5) и ЗНО (25)
+          td #{correlation.cor4}
+        tr
+          td Ученики с откл. балла аттестата (5)
+          td #{correlation.cor5}
+        tr
+          td Ученики с откл. балла ЗНО (50)
+          td #{correlation.cor6}
+        tr
+          td Ученики с откл. балла аттестата (5) и ЗНО (50)
+          td #{correlation.cor7}
+        tr
+          td Все ученики 4-й области
+          td #{correlation.cor8}

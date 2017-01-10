@@ -1,0 +1,19 @@
+{
+  "name": "lab9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sequelize db:migrate && sequelize db:seed:all",
+    "start": "sequelize db:migrate && sequelize db:seed:all"
+  },
+  "keywords": [],
+  "author": "Vlad Khitev <vkhitev@gmail.com> (https://vk.com/id18315550)",
+  "license": "ISC",
+  "dependencies": {
+    "fs-promise": "^0.5.0",
+    "mysql": "^2.11.1",
+    "sequelize": "^3.24.5"
+  }
+}

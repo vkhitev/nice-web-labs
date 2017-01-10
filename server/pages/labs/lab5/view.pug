@@ -1,0 +1,10 @@
+extends ../../../views/layout
+block content
+  h2.lab-title Лабораторная работа №#{activeLab}
+  div.sorting
+    p Сгенерируйте случайную последовательность:
+    button(type='button', id='generate-sequence')
+      | Сгенерировать
+
+block application
+  script(src='/bin/lab5.js', charset='utf-8')

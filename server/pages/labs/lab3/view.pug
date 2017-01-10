@@ -1,0 +1,10 @@
+extends ../../../views/layout
+block content
+  h2.lab-title Лабораторная работа №#{activeLab}
+  div.tables
+    p Таблицы, сгенерированные с помощью JS-кода на клиенте:
+  div.loops
+    p Циклы, сгенерированные с помощью JS-кода на клиенте:
+
+block application
+  script(src='/bin/lab3.js', charset='utf-8')

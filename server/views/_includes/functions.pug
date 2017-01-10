@@ -1,0 +1,9 @@
+mixin outputLabs(amount, active)
+  - for (var i = 1; i <= amount; i++)
+    - var text = 'Lab ' + i;
+    - if (i == active)
+      li
+        a.active(href='/labs/' + i) #{text}
+    - else
+      li
+        a(href='/labs/' + i) #{text}

@@ -1,0 +1,42 @@
+{
+  "sites":
+  [
+    {
+      "link": "https://developer.mozilla.org/",
+      "description": "Крупнейшая база с документацией по HTML/CSS/JS, написанная доступным языком"
+    },
+    {
+      "link": "http://www.w3schools.com/",
+      "description": "Сайт с множеством примеров готовых частей сайта"
+    },
+    {
+      "link": "http://devdocs.io/",
+      "description": "Документации ко многим технологиям и языкам программирования"
+    },
+    {
+      "link": "http://stackoverflow.com/",
+      "description": "Тут можно найти ответы на все вопросы"
+    }
+  ],
+  "books":
+  [
+    "An Introduction to Database Systems by C.J. Date",
+    "Survivejs - Webpack and React",
+    "Node.js Design Patterns, 2nd Edition",
+    "MEAN Web Development",
+    "Pro ReactJS",
+    "Beginning Node.js",
+    "Pro Express.js",
+    "Practical Node.js",
+    "Node.js the Right Way",
+    "Async JavaScript",
+    "JavaScript with Promises",
+    "JavaScript Allonge",
+    "Smashing Node.js",
+    "Eloquent JavaScript",
+    "JavaScript the Good Parts",
+    "Getting MEAN",
+    "Pro Node.js",
+    "JavaScript for Professional Developers"
+  ]
+}

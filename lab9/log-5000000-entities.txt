@@ -1,0 +1,35 @@
+Migrating:
+== 20161024105535-create-table-student: migrating =======
+== 20161024105535-create-table-student: migrated (0.062s)
+== 20161024130125-create-column-student-mark-mean: migrating =======
+== 20161024130125-create-column-student-mark-mean: migrated (0.041s)
+== 20161025113011-create-columns-student-test: migrating =======
+== 20161025113011-create-columns-student-test: migrated (0.121s)
+== 20161026170347-create-column-student-test-mean: migrating =======
+== 20161026170347-create-column-student-test-mean: migrated (0.077s)
+== 20161026171719-create-table-deviation: migrating =======
+== 20161026171719-create-table-deviation: migrated (0.044s)
+== 20161026182256-create-columns-test-deviation: migrating =======
+== 20161026182256-create-columns-test-deviation: migrated (0.069s)
+== 20161026193854-create-table-correlation: migrating =======
+== 20161026193854-create-table-correlation: migrated (0.037s)
+== 20161026211903-create-column-correlation-region: migrating =======
+== 20161026211903-create-column-correlation-region: migrated (0.071s)
+
+Seeding:
+== 20161024122839-generate-students: migrating =======
+== 20161024122839-generate-students: migrated (71.553s)
+== 20161024130932-insert-mark-mean: migrating =======
+== 20161024130932-insert-mark-mean: migrated (421.427s)
+== 20161025205729-generate-tests: migrating =======
+== 20161025205729-generate-tests: migrated (333.710s)
+== 20161026170418-insert-test-mean: migrating =======
+== 20161026170418-insert-test-mean: migrated (150.766s)
+== 20161026171748-insert-mark-deviation: migrating =======
+== 20161026171748-insert-mark-deviation: migrated (30.789s)
+== 20161026182319-insert-test-deviation: migrating =======
+== 20161026182319-insert-test-deviation: migrated (75.001s)
+== 20161026193940-insert-correlation: migrating =======
+== 20161026193940-insert-correlation: migrated (178.828s)
+== 20161026211925-insert-correlation-region: migrating =======
+== 20161026211925-insert-correlation-region: migrated (24.995s)

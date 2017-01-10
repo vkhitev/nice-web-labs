@@ -1,0 +1,13 @@
+extends ../../../views/layout
+block content
+  h2.lab-title Лабораторная работа №#{activeLab}
+  p Сайты, которыми я пользуюсь при создании веб-приложений:
+    ul
+      each site in sites
+        li
+          a(href=site.link) #{site.site}
+          | &nbsp- #{site.description}
+  p Книги, которые я читаю или прочёл:
+    ul
+      each book in books
+        li= book
